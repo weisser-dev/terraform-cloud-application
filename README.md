@@ -207,7 +207,7 @@ resources:
 Now you could apply the deploy.yaml with the following command: 
 ``kubectl apply -f deploy.yaml``
 
-#### Portfreigabe
+#### Port-Mapping
 So that we can access to our application (from outside) we need a simple port mapping:
 ```
 kubectl expose deployment node-api --type=LoadBalancer --port 8080 --target-port 3000
